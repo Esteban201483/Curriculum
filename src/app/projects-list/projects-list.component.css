@@ -1,0 +1,31 @@
+#projectCards
+{
+	margin-left:3%;
+}
+#cardContainer, #cardContainer th, #cardContainer td
+{	
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#cardContainer tr:nth-child(even) {
+	background-color: #f6f5f5;
+  }
+
+#cardContainer thead
+{
+	background-color: var(--main-color);
+	color:white;
+}
+
+#cardContainer
+{
+	width: 75%;
+}
+
+.card
+{
+	
+
+}

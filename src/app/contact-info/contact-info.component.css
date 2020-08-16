@@ -1,0 +1,18 @@
+.serviceText > a
+{
+	color: black;
+}
+
+.serviceText
+ {
+	 display: inline;
+	 margin-left: 3%;
+ }
+
+.serviceImage
+{
+	padding-top: 1.5%;
+	max-width: 2.5%;
+	max-height: 2.5%;
+	display: inline;
+}

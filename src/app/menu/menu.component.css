@@ -1,0 +1,20 @@
+#mainMenuItems
+{
+	margin-top: 0;
+	list-style: none;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#mainMenuItems a
+{
+	text-decoration: none;
+	color: black;
+
+
+}
+
+#mainMenu
+{
+	background-color: var(--secondary-color);
+}

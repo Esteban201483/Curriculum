@@ -1,0 +1,21 @@
+#personalImage
+{
+	max-width: 10%;
+	max-height: 10%;
+	margin-left: 7.5%;
+
+	border-radius: 15%;
+	display: block;
+}
+
+#personalContainer
+{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.subpersonalContainer
+{
+	margin-left: 10%;
+} 

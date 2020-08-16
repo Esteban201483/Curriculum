@@ -1,0 +1,10 @@
+footer > hr
+{
+	margin-top: 2%;
+	color:var(--secondary-color);
+}
+
+footer > p
+{
+	color: var(--secondary-dark-color);
+}

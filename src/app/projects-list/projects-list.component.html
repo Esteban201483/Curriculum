@@ -1,0 +1,21 @@
+<section id="projectsContainer" class="subsection">
+	<h2 class="subsectionTitle"> Projects</h2>
+
+	<div id="projectCards" class="">
+		<table id="cardContainer">
+			<thead>
+				<th>Project Name</th>
+				<th>Tags</th>
+				<th>Details</th>
+			</thead>
+			<tbody>
+				<tr *ngFor="let project of projects">
+					<td>{{project.name}}</td>
+					<td>{{project.tags}}</td>
+					<td>More Details</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</section>
