@@ -12,7 +12,7 @@
 				<tr *ngFor="let project of projects">
 					<td>{{project.name}}</td>
 					<td>{{project.tags}}</td>
-					<td>More Details</td>
+					<td><a class="projectLink" routerLink="/project/{{project.id}}">More Details</a></td>
 				</tr>
 			</tbody>
 		</table>

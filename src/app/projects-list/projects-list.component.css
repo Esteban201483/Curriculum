@@ -4,9 +4,10 @@
 }
 #cardContainer, #cardContainer th, #cardContainer td
 {	
-	border: 1px solid black;
+	border: 0.5px solid black;
 	border-collapse: collapse;
 	text-align: center;
+	padding : 1.1%;
 }
 
 #cardContainer tr:nth-child(even) {
@@ -21,7 +22,14 @@
 
 #cardContainer
 {
-	width: 75%;
+	margin-bottom: 10px;
+	max-width: inherit;
+	table-layout: fixed;
+}
+
+.projectLink
+{
+	color: var(--main-dark-color);
 }
 
 .card

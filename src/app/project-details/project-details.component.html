@@ -1,0 +1,14 @@
+<section class="subsection">
+	<h2 class="subsectionTitle">{{project.name}}</h2>
+
+	<h3 >Description</h3>
+	<p id="projectDescription" class="projectElement">{{project.description}}</p>
+
+	<h3>Technologies Utilized</h3>
+	<ul id="technologiesList" class="subsectionList">
+		<li *ngFor="let tecnology of project.technologies">{{tecnology}}</li>
+	</ul>
+
+	<h3>Images</h3>
+	Coming Soon...
+</section>

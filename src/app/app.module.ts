@@ -14,6 +14,9 @@ import { TechnicalSkillsComponent } from './technical-skills/technical-skills.co
 import { SoftKillsComponent } from './soft-kills/soft-kills.component';
 import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { IndexComponentComponent } from './index-component/index-component.component';
 
 @NgModule({
   declarations: [
@@ -29,10 +32,13 @@ import { ProjectsListComponent } from './projects-list/projects-list.component';
     TechnicalSkillsComponent,
     SoftKillsComponent,
     SoftSkillsComponent,
-    ProjectsListComponent
+    ProjectsListComponent,
+    ProjectDetailsComponent,
+    IndexComponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
