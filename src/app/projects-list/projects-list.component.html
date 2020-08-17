@@ -5,13 +5,13 @@
 		<table id="cardContainer">
 			<thead>
 				<th>Project Name</th>
-				<th>Tags</th>
+				<!--<th>Tags</th>-->
 				<th>Details</th>
 			</thead>
 			<tbody>
 				<tr *ngFor="let project of projects">
 					<td>{{project.name}}</td>
-					<td>{{project.tags}}</td>
+					<!--<td>{{project.tags}}</td>-->
 					<td><a class="projectLink" routerLink="/project/{{project.id}}">More Details</a></td>
 				</tr>
 			</tbody>
