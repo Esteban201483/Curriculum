@@ -36,11 +36,31 @@
 	max-width: 90%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding-bottom: 1%;
-	margin-bottom: 1.5%;
+	margin-bottom: 22px;
+
+	animation-name: revealing;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
 	
 }
 
 .closeButton
 {
 	float: left;
+}
+
+@keyframes revealing
+{
+	0%
+	{
+		opacity: 0%;
+		margin-top: 10%;
+	}
+
+	100%
+	{
+		opacity: 100%;
+		margin-top: 0%;
+
+	}
 }

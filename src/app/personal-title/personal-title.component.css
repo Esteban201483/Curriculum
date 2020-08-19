@@ -1,12 +1,16 @@
 #personalImage
 {
 	max-width: 17%;
-	max-height: 10%;
-	min-width: 17%;
+	max-height: 17%;
+	min-width: 10%;
+	min-height: 10%;
 	margin-left: 7.5%;
 
 	border-radius: 15%;
 	display: block;
+
+	width: auto;
+	height: auto;
 }
 
 #personalContainer

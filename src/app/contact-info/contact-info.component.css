@@ -1,6 +1,6 @@
 .serviceText > a
 {
-	color: black;
+	color: var(--main-color);
 }
 
 .serviceText

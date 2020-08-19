@@ -4,14 +4,16 @@
 	list-style: none;
 	padding-top: 1%;
 	padding-bottom: 1%;
+
 }
 
-#mainMenuItems li
+#mainMenuItems a:hover
 {
-	display: inline;
-	margin-left: 5%;
-	
+	text-decoration: underline;
+	background-color: var(--main-color);
 }
+
+
 
 #mainMenuItems a
 {
@@ -19,6 +21,11 @@
 	color: white;
 	font-weight: bold;
 	font-size: 1.35em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+
 
 
 }
@@ -27,4 +34,12 @@
 {
 	background-color: var(--main-dark-color);
 	width: 100%;
+}
+
+#mainMenuItems li
+{
+	display: inline;
+	
+	
+	
 }
