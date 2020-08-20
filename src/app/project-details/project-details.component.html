@@ -9,8 +9,9 @@
 		<ul id="technologiesList" class="subsectionList">
 			<li *ngFor="let tecnology of project.technologies">{{tecnology}}</li>
 		</ul>
-
-		<!--<h3>Images</h3>
-		Coming Soon...-->
+		<section *ngIf="project.repository !== ''">
+			<h3>Code</h3>
+			<p ><a href="{{project.repository}}">Go to Repository with code</a></p>
+		</section>
 	</div>
 </section>

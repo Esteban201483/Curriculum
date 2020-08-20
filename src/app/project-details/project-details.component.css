@@ -12,3 +12,8 @@
 {
 	white-space: pre-line;
 }
+
+a
+{
+	color: var(--main-color);
+}

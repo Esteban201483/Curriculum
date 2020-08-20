@@ -11,7 +11,8 @@
 	description: "Personal website to add information about the projects in which I participated. The projects data is stored in a Typescript exported array and is obtained by the" + 
 	" components using the Observer design pattern.", 
 	technologies: ["Angular", "Javascript (Front End)", "Amazon EC2","Nginx"], 
-	tags: ["PHP", "Javascript (Front End)","Bootstrap"]},
+	tags: ["PHP", "Javascript (Front End)","Bootstrap"],
+	repository: "https://github.com/Esteban201483/Curriculum"},
 
 
 	 /*{id: 1, name: "Request Management System", summary: "A very nice project jeje", 
@@ -30,12 +31,15 @@
 	 +" players ammount and board size. When a game room is created, a random ID will be generated and the user must share this ID with the people that he wants to join, in order to avoid stranger players\n\n" +
 	 "When all the requiered players joins the game room, the games starts automatically.\n\n This web game was the Application Web course's project.\n\n This project was developed in pairs"
 	 , technologies: ["Javascript (Front End) with Express Framework","Javascript (Back End)", "Socket.io", "JQuery","Bootstrap"], 
-	 tags: []},
+	 tags: [],
+	 repository:"https://github.com/Esteban201483/appweb20a-Esteban-Joel.git"},
 	
 	 {id: 3, name: "Course Management System", summary: "A very nice project jeje", 
 	 description: "A website that allows the creation of courses and dynamic forms to register in a course. Each dynamic form is composed of questions present in the database, and the" + 
 	 "system administrator can create forms using that questions. This project was developed under Engineering Software course, in a six members team based.",
-	  technologies: ["PHP", "Javascript (Front End)","Bootstrap","Apache", "Oracle DBMS", "JIRA for project management"], tags: []},
+	  technologies: ["PHP", "Javascript (Front End)","Bootstrap","Apache", "Oracle DBMS", "JIRA for project management",
+	  ], tags: [],
+	  repository:"https://github.com/Blightning97/Registro-OTS"},
 	 
 	 {id: 4, name: "Studying spaces searching App", summary: "A very nice project jeje", 
 	 description: "This app allows the user to create studying spaces inside an university, in order to let other students to join the studying space and made comments.\n\n" +
@@ -45,5 +49,6 @@
 	 + "studying space \n\n" + 
 	 "Recycler Views and ListViews are used in order to display commentaries and users joined in the studying space.\n\n" +
 	 "This project was developer under five members team.", 
-	 technologies: ["Java, for Android development","Firebase","Google Maps API", "JIRA for project management"], tags: []}
- ]
+	 technologies: ["Java, for Android development","Firebase","Google Maps API", "JIRA for project management"], tags: [],
+	 repository:""}
+]

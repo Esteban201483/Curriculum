@@ -6,5 +6,6 @@ export interface Project
 	description: String;
 	technologies: Array<String>;
 	tags: Array<String>;
+	repository: String;
 	//Todo: Implement Image Array
 }
