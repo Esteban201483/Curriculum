@@ -10,7 +10,7 @@
 #mainMenuItems a:hover
 {
 	text-decoration: underline;
-	background-color: var(--main-color);
+	/*background-color: var(--main-color);*/
 }
 
 
@@ -29,7 +29,7 @@
 
 #mainMenu
 {
-	background-color: var(--main-dark-color);
+	background-color: var(--main-color);
 	width: 100%;
 }
 
