@@ -34,6 +34,7 @@
 
           "configurations": {
 
+
 			"es5": {
 				"tsConfig": "./tsconfig-es5.app.json"
 			  },
