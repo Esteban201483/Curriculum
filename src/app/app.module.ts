@@ -17,6 +17,7 @@ import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { IndexComponentComponent } from './index-component/index-component.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { IndexComponentComponent } from './index-component/index-component.compo
     SoftSkillsComponent,
     ProjectsListComponent,
     ProjectDetailsComponent,
-    IndexComponentComponent
+    IndexComponentComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
