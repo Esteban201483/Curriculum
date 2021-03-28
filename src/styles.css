@@ -20,7 +20,7 @@
 .subsectionList li
 {
 	margin-bottom: 1%;
-	list-style: symbols(cyclic "🌠");
+	list-style: symbols(cyclic "➜");
 }
 
 .subsectionContent{
