@@ -5,12 +5,16 @@
 	--main-dark-color: #131212;
 	--secondary-color: #DBD6D6; 
 	--secondary-dark-color: #807f7f;*/ 
-	--main-color: #00a5d6;
+	--main-color: #1f2a35;
 	--main-dark-color: #0081a7;
-	--main-light-color: #effbff;
+	--main-light-color: #f6f6f6;
 	/*--secondary-color: #00a5d6; 
 	--secondary-dark-color: #0081a7;
 	--secondary-light-color: #e3f8ff;*/
+}
+.ml8Percent
+{
+	margin-left: 8%;
 }
 
 .subsectionList li
@@ -19,6 +23,9 @@
 	list-style: symbols(cyclic "🌠");
 }
 
+.subsectionContent{
+	margin-top: 16px;
+}
 
 .subsectionTitle
 {
@@ -26,6 +33,11 @@
 	color: white;
 	padding-left: 1%;
 	margin-top: 0;
+
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 8px;
+
 }
 
 .subsection
@@ -62,5 +74,16 @@
 		opacity: 100%;
 		margin-top: 0%;
 
+	}
+}
+@media only screen and (max-width: 1140px) {
+	h1{
+		font-size: 34px !important;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	h1{
+		font-size: 22px !important;
 	}
 }
