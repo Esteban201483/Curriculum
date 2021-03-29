@@ -1,0 +1,9 @@
+#certifications{
+    margin-left: 6%;
+    color: var(--main-color);
+}
+
+.certificationName{
+    height: 24px;
+    font-weight: 600;
+}

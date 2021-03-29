@@ -1,3 +1,4 @@
+import { TagPlaceholder } from '@angular/compiler/src/i18n/i18n_ast';
 import { Injectable } from '@angular/core';
 import {of, Observable} from 'rxjs';
 
@@ -14,7 +15,7 @@ export class ProjectsServiceService {
 
   getProjects(): Observable<Project[]>
   {
-	return of(PROJECTS);
+	  return of(PROJECTS);
   }
   getProject(id: number): Observable<Project>
   {

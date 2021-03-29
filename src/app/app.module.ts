@@ -18,6 +18,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { IndexComponentComponent } from './index-component/index-component.component';
 import { ContactComponent } from './contact/contact.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsListComponent,
     ProjectDetailsComponent,
     IndexComponentComponent,
-    ContactComponent
+    ContactComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
