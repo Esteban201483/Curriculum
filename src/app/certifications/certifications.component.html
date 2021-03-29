@@ -1,0 +1,24 @@
+<div class="" id="certifications">
+    <h2 style="margin-bottom:48px">Certifications and courses</h2>
+
+  
+    <div *ngFor="let certification of certifications" class="row d-flex flex-direction-row" style="margin-bottom:16px;margin-top:16px;">
+        <div class="col-2">
+            <p>Image coming soon...</p>
+        </div>
+
+        <div class="col-10">
+            <p class="certificationName">
+                {{certification.name}}
+            </p>
+            <p class="certificationType">
+                {{certification.type}}
+            </p>
+            <p class="certificationLink">
+                See more: <a href="{{certification.certification_url}}"> {{certification.certification_url}} </a>
+            </p>
+        </div>
+     
+    </div>
+ 
+</div>
