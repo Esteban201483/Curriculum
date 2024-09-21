@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SoftKillsComponent } from './soft-kills.component';
 
@@ -6,7 +6,7 @@ describe('SoftKillsComponent', () => {
   let component: SoftKillsComponent;
   let fixture: ComponentFixture<SoftKillsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SoftKillsComponent ]
     })
