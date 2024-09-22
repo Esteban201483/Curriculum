@@ -1,4 +1,3 @@
-import { TagPlaceholder } from '@angular/compiler/src/i18n/i18n_ast';
 import { Injectable } from '@angular/core';
 import {of, Observable} from 'rxjs';
 

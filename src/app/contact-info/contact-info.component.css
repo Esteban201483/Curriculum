@@ -1,19 +1,16 @@
-.serviceText > a
-{
+.serviceText > a{
 	color: var(--main-color);
 }
 
-.serviceText
- {
-	 display: inline;
-	 margin-left: 3%;
+.serviceText{
+	display: inline;
+	margin-left: 16px;
  }
 
-.serviceImage
-{
-	margin-left: 4%;
-	height: 32px;
-	width: 32px;
+.serviceImage{
+	margin-left: 16px;
+	height: 24px;
+	width: 24px;
 	display: inline;
 }
 
@@ -29,8 +26,7 @@
 
 /*Responsive*/
 @media only screen and (max-width: 760px) {
-	.serviceImage
-	{
+	.serviceImage{
 		height: 32px;
 		width: 24px;
 		margin-right: 8px;

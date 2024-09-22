@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactItemInterface } from './model/ContactItemInterface';
+import { ContactInfoService} from './service/contact-info.service';
 
 @Component({
   selector: 'app-contact-info',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactInfoComponent implements OnInit {
 
-  constructor() { }
+  public contactInfoItems: ContactItemInterface[];
+
+  constructor(private _contactService: ContactInfoService) { 
+    this.contactInfoItems = [];
+  }
 
   ngOnInit(): void {
+    this.loadContactItems();
+  }
+
+  loadContactItems(){
+    this._contactService.getContactInfoItems().subscribe(
+      response => {
+        this.contactInfoItems = response;
+        console.log(this.contactInfoItems)
+      }
+    );
   }
 
 }

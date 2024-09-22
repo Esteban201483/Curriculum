@@ -45,6 +45,12 @@
 		type: "Course completion",
 		certification_url: "https://university.mongodb.com/course_completion/de2bf3f8-65f5-45be-97a3-3eead4356aea",
 		logo_url: "image_url"
-
+	},
+	{
+		id: 6,
+		name: "Videogames Development using Godot",
+		type: "Course completion",
+		certification_url: "assets/certifications/Esteban Rojas - Desarrollo Videojuegos Godot.pdf",
+		logo_url: "image_url"
 	}
 ]

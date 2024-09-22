@@ -1,6 +1,6 @@
 /**
- * This file contains all the projects developed by myself.
- * TODO: use Database, possibly Mongo
+ * This file contains all the projects which I have collaborated.
+ * TODO: connect to the backend
  */
 
  import {Project} from './project';

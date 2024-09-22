@@ -1,5 +1,4 @@
-#mainMenuItems
-{
+#mainMenuItems{
 	margin-top: 0;
 	list-style: none;
 	padding-top: 1%;
@@ -13,28 +12,25 @@
 	/*background-color: var(--main-color);*/
 }
 
+#mainMenuItems div{
+	margin-right: 12px;
+}
 
 
 #mainMenuItems a
 {
 	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	font-size: 1.35em;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
+	color: #a09f9f ;
+	font-size: 1.2em;
+	font-weight: 600;
 }
 
-#mainMenu
-{
-	background-color: var(--main-color);
+#mainMenu{
+	background-color: white;
 	width: 100%;
 }
 
-#mainMenuItems li
-{
+#mainMenuItems li{
 	display: inline;
 }
 

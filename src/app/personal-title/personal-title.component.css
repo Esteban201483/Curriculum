@@ -1,25 +1,24 @@
-#personalImage
-{
+#personalImage{
 
-	border-radius: 15%;
+	border-radius: 12px;
+	width: 100px;
 	display: block;
 
-	width: 100px;
-	height: 100px;
+	/*width: 100px;
+	height: 100px;*/
 }
 
-#personalContainer
-{
+#personalContainer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin-bottom: 24px;
 	margin-top: 24px;
-	margin-left: 8%;
-	
 }
 
-.subpersonalContainer
-{
-	margin-left: 10%;
-} 
+.personalTitle{
+	font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 8px;
+}

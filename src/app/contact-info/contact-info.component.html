@@ -1,12 +1,14 @@
-<section id="contactInfo" class="subsection">
+<!--<section id="contactInfo" class="subsection">
 	<h2 class="subsectionTitle">Contact info</h2>
-	<div class="row col-12 subsectionContent">
-		<img class="serviceImage" src="assets/github.png" alt="Github logo" /> <p class="serviceText"><a href="https://github.com/Esteban201483">Esteban201483</a></p>
+
+	<div *ngFor="let contactItem of contactInfoItems" class="subsectionContent">
+		<img class="serviceImage" src="{{contactItem.imgAsset}}" alt="{{contactItem.alt}}" /> 
+		<span class="serviceText"><a href="{{contactItem.link}}">{{contactItem.username}}</a></span>
 	</div>
-	<div class="row col-12">
-		<img class="serviceImage gmail" src="assets/gmail.png" alt=">Gmail logo" /> <p class="serviceText"><a href="mailto:Esteban201483@gmail.com">Esteban201483&#64;gmail.com</a></p>
+</section>-->
+<div class="contactContent">
+	<div *ngFor="let contactItem of contactInfoItems">
+		<img class="serviceImage" src="{{contactItem.imgAsset}}" alt="{{contactItem.alt}}" /> 
+		<span class="serviceText"><a href="{{contactItem.link}}">{{contactItem.username}}</a></span>
 	</div>
-	<div class="row col-12">
-		<img class="serviceImage" src="assets/whatsapp.png" alt="Whatsapp logo" /> <p class="serviceText"><a href="tel:+50687553317">(+506)87553317</a></p>
-	</div>
-</section>
+</div>

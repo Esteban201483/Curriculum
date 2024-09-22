@@ -4,7 +4,6 @@ import { Location } from '@angular/common';
 
 import { ProjectsServiceService} from '../projects-service.service';
 import { Project } from '../project'; 
-import { getSyntheticPropertyName } from '@angular/compiler/src/render3/util';
 
 @Component({
   selector: 'app-project-details',

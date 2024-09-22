@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-:root
-{
+:root{
 	/*--main-color: #444343;
 	--main-dark-color: #131212;
 	--secondary-color: #DBD6D6; 
@@ -12,13 +11,16 @@
 	--secondary-dark-color: #0081a7;
 	--secondary-light-color: #e3f8ff;*/
 }
-.ml8Percent
-{
+
+body{
+	background-color: #f6f6f6 !important;
+}
+
+.ml8Percent{
 	margin-left: 8%;
 }
 
-.subsectionList li
-{
+.subsectionList li{
 	margin-bottom: 1%;
 	list-style: symbols(cyclic "➜");
 }
@@ -27,21 +29,25 @@
 	margin-top: 16px;
 }
 
-.subsectionTitle
-{
+.contactContent{
+	padding: 16px 0px;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.subsectionTitle{
 	background-color: var(--main-color);
 	color: white;
 	padding-left: 1%;
 	margin-top: 0;
-
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 8px;
+	font-weight: 700;
+  	font-size: 20px;
+	padding: 14px;
 
 }
 
-.subsection
-{
+.subsection{
 	margin-left: 7.5%;
 	background-color: var(--main-light-color);
 	min-width: 70%;
