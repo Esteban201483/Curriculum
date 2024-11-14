@@ -1,10 +1,21 @@
-<section id="softSkills" class="subsection">
-	<h2 class="subsectionTitle">Soft Skills</h2>
+<section id="softSkills" style="margin-bottom: 24px;">
+	<!--<h2 class="subsectionTitle">{{'contact.soft_skills' | translate}}</h2>
 
 	<ul class="subsectionList subsectionContent">
 		<li>Autodidact, with passion for acquiere new knowledge.</li>
 		<li>Teamwork, including communication.</li>
 		<li>Creativity.
 		</li>
-	</ul>
+	</ul>-->
+
+
+	<span class="index-subtitle">{{'contact.soft_skills' | translate }}</span>
+
+	<div id="skills-container" class="base-padding">
+		<div class="skill-container" *ngFor="let skill of skills">
+			<span class="skill"><i class="fa fa-user"></i>{{skill}}</span>
+		</div>
+	</div>
+
+	
 </section>

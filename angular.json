@@ -11,6 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+          "defaultConfiguration": "development",
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/proyectoSerio",
@@ -24,27 +25,21 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "primeng/resources/themes/viva-dark/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
-
-
+            ],
+            "polyfills": [
+              "@angular/localize/init"
             ]
-		  },
-		  
-
-
-
+          },
           "configurations": {
-
-
-			"es5": {
-				"tsConfig": "./tsconfig-es5.app.json"
-			  },
-
+            "es5": {
+              "tsConfig": "./tsconfig-es5.app.json"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -71,6 +66,27 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "development": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": true,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
             }
           }
         },
@@ -78,39 +94,20 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "proyectoSerio:build"
-		  },
-		  
-
+          },
           "configurations": {
             "production": {
               "browserTarget": "proyectoSerio:build:production"
-			},
-
-			"es5": {
-				"browserTarget": "proyectoSerio:build:es5"
-			  }
+            },
+            "es5": {
+              "browserTarget": "proyectoSerio:build:es5"
+            }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "proyectoSerio:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
           }
         },
         "lint": {
@@ -142,5 +139,6 @@
           "builder": "angular-cli-ghpages:deploy"
         }
       }
-    }}
+    }
+  }
 }

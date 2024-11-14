@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { SoftKillsComponent } from './soft-kills.component';
+import { BookListComponent } from './book-list.component';
 
-describe('SoftKillsComponent', () => {
-  let component: SoftKillsComponent;
-  let fixture: ComponentFixture<SoftKillsComponent>;
+describe('ProjectsListComponent', () => {
+  let component: BookListComponent;
+  let fixture: ComponentFixture<BookListComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SoftKillsComponent ]
+      declarations: [ BookListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SoftKillsComponent);
+    fixture = TestBed.createComponent(BookListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

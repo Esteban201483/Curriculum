@@ -1,0 +1,22 @@
+{
+    "contact": {
+        "position"                 : "Programador Fullstack MID",
+        "technical_skills"         : "Habilidades Técnicas",
+        "soft_skills"              : "Habilidades Blandas",
+        "books"                    : "Libros Leídos",
+        "projects"                 : "Proyectos",
+        "project_name"             : "Nombre del Proyecto",
+        "project_details"          : "Detalles",
+        "project_more_details"     : "Más Detalles"
+    },
+
+    "menu": {
+        "projects"                 : "Proyectos",
+        "index"                    : "Indice",
+        "certifications"           : "Certificaciones"
+    },
+
+    "projects": {
+        "disclosure"               : "Algunos proyectos y detalles de proyectos no se incluyen en el portafolio debido a acuerdos de confidencialidad"
+    }
+}

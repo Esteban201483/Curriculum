@@ -1,11 +1,9 @@
-<section id="technicalSkills" class="subsection">
-	<h2 class="subsectionTitle"> Technical Skills</h2>
+<section id="technicalSkills" style="margin-bottom: 24px;">
+	<span class="index-subtitle">{{'contact.technical_skills' | translate }}</span>
 
-	<ul class="subsectionList subsectionContent">
-		<li>Experience using Javascript, PHP, Java, C# and Python.</li>
-		<li>Knowledge in SQL databases. Also, experience using Oracle DBMS, MySQL, SQLite and Microsoft SQL Server.</li>
-		<li>Experience using NodeJS with Express Framework, Websockets and Bootstrap. Also, knowledge in Angular Framework (including this site).</li>
-		<li>Knowledge in Human-Computer Interaction field</li>
-		<li>Apache, Nginx and Amazon EC2</li>
-	</ul>
+	<div id="skills-container" class="base-padding">
+		<div class="skill-container" *ngFor="let skill of skills">
+			<span class="skill"><i class="fa-solid fa-check"></i>{{skill}}</span>
+		</div>
+	</div>
 </section>

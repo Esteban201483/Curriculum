@@ -1,40 +1,57 @@
-.serviceText > a{
+.contactContent{
+	padding: 16px 0px;
+	display: flex;
+	justify-content: center;
+
+}
+
+.contactContent a{
 	color: var(--main-color);
+	text-decoration: none;
 }
 
-.serviceText{
-	display: inline;
-	margin-left: 16px;
- }
-
-.serviceImage{
-	margin-left: 16px;
-	height: 24px;
-	width: 24px;
-	display: inline;
+.contactContent a:hover{
+	color: var(--main-dark-color) !important;
+	text-decoration: underline !important;
+	text-decoration: none;
 }
 
-.gmail{
-	height: 32px;
+.contact-icon{
+	padding-right: 6px;
+	padding-left: 24px;
+	font-size: 1.5rem;
 }
+
 
 .row{
 	margin-bottom: 8px;
+}
+
+.contact-item{
+	display: flex;
+	align-items: center;
+}
+
+.contact-item div{
+	display: inline;
+	height: 100%;
 }
 
 
 
 /*Responsive*/
 @media only screen and (max-width: 760px) {
-	.serviceImage{
-		height: 32px;
-		width: 24px;
-		margin-right: 8px;
+
+	.contactContent{
+		display: flex;
+		flex-direction: column;
+		padding-left: 30vw;
 	}
 
-	.gmail{
-		height: 24px;
+	.contact-item{
+		margin: 8px 0px;
 	}
+
 }
 
 

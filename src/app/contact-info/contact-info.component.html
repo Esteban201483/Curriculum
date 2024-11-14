@@ -1,14 +1,6 @@
-<!--<section id="contactInfo" class="subsection">
-	<h2 class="subsectionTitle">Contact info</h2>
-
-	<div *ngFor="let contactItem of contactInfoItems" class="subsectionContent">
-		<img class="serviceImage" src="{{contactItem.imgAsset}}" alt="{{contactItem.alt}}" /> 
-		<span class="serviceText"><a href="{{contactItem.link}}">{{contactItem.username}}</a></span>
-	</div>
-</section>-->
 <div class="contactContent">
-	<div *ngFor="let contactItem of contactInfoItems">
-		<img class="serviceImage" src="{{contactItem.imgAsset}}" alt="{{contactItem.alt}}" /> 
-		<span class="serviceText"><a href="{{contactItem.link}}">{{contactItem.username}}</a></span>
+	<div class="contact-item" *ngFor="let contactItem of contactInfoItems">
+		<div><i class="{{contactItem.icon}} contact-icon"></i></div>
+		<div><a href="{{contactItem.link}}">{{contactItem.username}}</a></div>
 	</div>
 </div>

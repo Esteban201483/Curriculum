@@ -1,0 +1,23 @@
+{
+    "contact": {
+        "position"                 : "MID Fullstack Developer",
+        "technical_skills"         : "Technicall Skills",
+        "soft_skills"              : "Soft Skills",
+        "books"                    : "Read Books",
+        "projects"                 : "Projects",
+        "project_name"             : "Project Name",
+        "project_details"          : "Details",
+        "project_more_details"     : "More Details"
+    },
+
+    "menu": {
+        "projects"                 : "Projects",
+        "index"                    : "Index",
+        "position"                 : "MID Fullstack Developer",
+        "certifications"           : "Certifications"
+    },
+
+    "projects": {
+        "disclosure"               : "Some projects and project details aren't displayed in this portfolio due to non-disclosure agreements"
+    }
+}

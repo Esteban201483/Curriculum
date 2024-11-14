@@ -1,0 +1,26 @@
+<section id="projectsContainer">
+	<span class="index-subtitle">{{'contact.books' | translate}}</span>
+
+	<div class="base-padding">
+		<p-carousel 
+		[value]="books" 
+		[numVisible]="3" 
+		[numScroll]="3" 
+		[circular]="true"
+		[responsiveOptions]="responsiveOptions">
+			<ng-template let-project pTemplate="item">
+				<div class="project-item">
+					<div class="project-title">
+						{{ project.name }}
+					</div>
+					<div class="project-image-container">
+						<img class="project-image" src="{{project.previewImageURL}}"/>
+						<div class="project-summary">
+							{{ project.summary }} 
+						</div>
+					</div>
+				</div>
+			</ng-template>
+		</p-carousel>
+	</div>
+</section>

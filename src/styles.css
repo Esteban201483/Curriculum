@@ -5,7 +5,7 @@
 	--secondary-color: #DBD6D6; 
 	--secondary-dark-color: #807f7f;*/ 
 	--main-color: #353333;
-	--main-dark-color: #0081a7;
+	--main-dark-color: #252424;
 	--main-light-color: #f6f6f6;
 	/*--secondary-color: #00a5d6; 
 	--secondary-dark-color: #0081a7;
@@ -27,13 +27,6 @@ body{
 
 .subsectionContent{
 	margin-top: 16px;
-}
-
-.contactContent{
-	padding: 16px 0px;
-	display: flex;
-	justify-content: space-around;
-
 }
 
 .subsectionTitle{
@@ -62,9 +55,18 @@ body{
 	
 }
 
-.closeButton
-{
+.closeButton{
 	float: left;
+}
+
+.index-subtitle{
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding-left: 7vw;
+}
+
+.base-padding{
+	padding-left: 7vw;	
 }
 
 @keyframes revealing

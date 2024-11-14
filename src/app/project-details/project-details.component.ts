@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { ProjectsServiceService} from '../projects-service.service';
-import { Project } from '../project'; 
+import { ProjectInterface } from '../project'; 
 
 @Component({
   selector: 'app-project-details',
@@ -16,9 +16,9 @@ export class ProjectDetailsComponent implements OnInit {
 	  private route: ActivatedRoute,
 	  private projectService: ProjectsServiceService,
 	  private location: Location
-
   ){ }
-  project: Project;
+
+  project: ProjectInterface;
 
   ngOnInit(): void {
 	  this.getProject();

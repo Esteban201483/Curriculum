@@ -8,11 +8,12 @@ import { CertificationsComponent } from 'src/app/certifications/certifications.c
 
 
 const routes: Routes = [
-	{path: "", component: IndexComponentComponent},
+	{path: "index", component: IndexComponentComponent},
 	{path: "project/:id", component: ProjectDetailsComponent},
   {path: "projects", component: ProjectsListComponent},
 	{path: "contact", component: ContactComponent},
-  {path: "certifications", component: CertificationsComponent} 
+  {path: "certifications", component: CertificationsComponent},
+  {path: "", redirectTo:'index'} 
 ];
 
 
@@ -22,8 +23,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {})
   ],
-  exports:
-  [
+  exports:[
 	  RouterModule
   ]
 })

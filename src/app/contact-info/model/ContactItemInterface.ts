@@ -1,7 +1,6 @@
 export interface ContactItemInterface{
     ID:string;
     link: string;
-    imgAsset: string;
-    imgAlt: string;
+    icon: string;
     username: string;
 }

@@ -1,0 +1,24 @@
+#skills-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-between; 
+}
+
+.skill-container{
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.skill{
+    padding: 12px;
+    min-width: 50%;
+    background-color: var(--main-color);
+    color: white;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.skill i{
+    margin-right: 12px;
+}

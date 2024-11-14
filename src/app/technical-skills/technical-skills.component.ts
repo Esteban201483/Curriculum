@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnicalSkillsComponent implements OnInit {
 
-  constructor() { }
+  public skills:string[];
+
+  constructor() { 
+    this.skills = [
+      'PHP', 'Typescript', 'SQL', 'PostgreSQL', 'Magento', 'Nginx', 'FreeBSD', 'Ubuntu',
+      'Postfix', 'PGP', 'Wordpress', 'Bash', 'CSS', 'OOP', 'Design Patterns'
+    ];
+  }
 
   ngOnInit(): void {
+    this.skills.sort(function (a:string, b:string){
+      return a.localeCompare(b); 
+    });
   }
+
 
 }

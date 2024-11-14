@@ -1,34 +1,20 @@
-<!--<nav id="mainMenu">
-	<div style="display:flex; justify-content: space-between;">
-		<div style="display: flex; align-items: center; padding: 16px;">
-			<ul id="mainMenuItems" style="width: 100%;">
-				<li><a routerLink="/">Index</a></li>
-				<li><a routerLink="/projects">Projects</a></li>
-				<li><a routerLink="/certifications">Certifications</a></li>
-				<li><a routerLink="/contact">Contact</a></li>
-			</ul>
-		</div>
-		<div id="mainMenuItems" style="display: flex; align-items: center; color: white; font-weight: 700; font-size: 16px;">
-			<ul>
-				
-			</ul>
-		</div>
-	</div>
-</nav>-->
 <nav id="mainMenu">
 	<div style="display:flex; justify-content: space-between;">
 		<div style="display: flex; align-items: center; width: 100%;">
 			<div id="mainMenuItems" class="d-flex" style="width: 100%; justify-content: center;">
-				<div><a routerLink="/">Index</a></div>
-				<div><a routerLink="/projects">Projects</a></div>
-				<div><a routerLink="/certifications">Certifications</a></div>
-				<div><a routerLink="/contact">Contact</a></div>
+				<div><a routerLink="/index" routerLinkActive="active">{{'menu.index' | translate}}</a></div>
+				<div><a routerLink="/projects" routerLinkActive="active">{{'menu.projects' | translate}}</a></div>
+				<div><a routerLink="/certifications" routerLinkActive="active">{{'menu.certifications' | translate}}</a></div>
+				<!--<div><a routerLink="/contact" routerLinkActive="active">{{'menu.contact' | translate}}</a></div>-->
+				<div (mouseenter)="showLangMenu()" (mouseleave)="hideLangMenu()">
+					<span id="languageSelector" (click)="toggleLanguageMenu()"><a>{{_translateService.currentLang}}<i class="fa-solid fa-chevron-down" style="margin-left: 6px; font-size: 0.7rem;"></i></a></span>
+
+					<div *ngIf="displayLangMenu" id="languageMenu">
+						<div class="langMenuItem" (click)="chooseLanguage('es')">ES</div>
+						<div class="langMenuItem" (click)="chooseLanguage('en')">EN</div>
+					</div>
+				</div> 
 			</div>
 		</div>
-		<!--<div id="mainMenuItems" style="display: flex; align-items: center; color: white; font-weight: 700; font-size: 16px;">
-			<ul>
-				Lang
-			</ul>
-		</div>-->
 	</div>
 </nav>

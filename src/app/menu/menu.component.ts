@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  displayLangMenu:boolean;
+
+  constructor(public _translateService: TranslateService){
+    this.displayLangMenu = false;
+  }
 
   ngOnInit(): void {
+
+  }
+
+  public showLangMenu(){
+    this.displayLangMenu = true;
+  }
+
+  public hideLangMenu(){
+    this.displayLangMenu = false;
+  }
+
+  public toggleLanguageMenu(){
+    this.displayLangMenu = !this.displayLangMenu;
+  }
+
+  public chooseLanguage(languageCode:string){
+    this._translateService.use(languageCode);
+    localStorage.setItem("USER_LANG", languageCode);
+    this.hideLangMenu();
+    window.location.reload();
   }
 
 }
